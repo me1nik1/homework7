@@ -20,7 +20,6 @@ public class Main {
             while (num < 10) {
                 num++;
                 System.out.print(num + " ");
-
             }
             System.out.println();
             for (; num > 0; num--) {
@@ -34,9 +33,10 @@ public class Main {
             int population = 12000000;
             int deathRate = 8;
             int birthRate = 17;
+            int percent = 1000;
             for (int year = 1; year <= 10; year++) {
-                population = population + (birthRate - deathRate) * population / 1000;
-                System.out.println("Год " + year + ",численность составляет " + population);
+                population = population + (birthRate - deathRate) * population / percent;
+                System.out.println("Год " + year + ", численность составляет " + population);
             }
             System.out.println();
         }
@@ -82,7 +82,7 @@ public class Main {
         {
             System.out.println("Задача 7");
 
-            for(int day = 2; day < 31; day +=7) {
+            for (int day = 2; day < 31; day += 7) {
                 System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
             }
             System.out.println();
@@ -90,8 +90,8 @@ public class Main {
         {
             System.out.println("Задача 8");
 
-            for(int year = 2024 - 200; year < 2024 +100; year++) {
-                if (year % 79 == 0){
+            for (int year = 2024 - 200; year < 2024 + 100; year++) {
+                if (year % 79 == 0) {
                     System.out.println(year);
                 }
             }
